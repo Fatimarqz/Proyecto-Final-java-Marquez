@@ -1,0 +1,374 @@
+*::after, 
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-image: url(./assets/img/scary-skulls-4k-8k-wallpaper-preview.jpg);
+    background-repeat: none;
+    background-size: 80%;
+}
+
+main{
+    background-color: rgb(38, 36, 36);
+    text-decoration: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    font-family: 'Lato';
+}
+
+.icon-cart{
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    stroke: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+    width: 300px;
+    height: 250px;
+}
+
+/* Header */
+
+.header h1{
+    background-color: black;
+    border-radius: 10%;
+    margin-left: 10%;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 40px;
+
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 30px 0;
+}
+
+.container-icon{
+    position: relative;
+    margin-right: 5%;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-producto{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    margin-right: 20px;
+    stroke: red;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-add-cart{
+    font-size: 18px;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+/* Main */
+
+.destacados{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+    margin: 25px 600px;
+    border-radius: 30px 50px 50px 50px;
+    margin-bottom: 90px;
+    font-family: fantasy;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 20);
+}
+
+.item img{
+    width: 100%;
+    max-width: 100%;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-producto{
+    color: white;
+    background-color:  rgb(20, 19, 19);
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-producto button {
+    border: none;
+    background: none;
+    background-color: #082874;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* footer formulario de registro*/
+
+footer{
+    background-image: url(./assets/img/scary-skulls-4k-8k-wallpaper-preview.jpg);
+    background-size: 100%;
+    font-display: flex;
+}
+
+.form-registro{
+    margin-left: 10%;
+    margin-top: 5%;
+    right: 100px;
+    width: 400px;
+    background-color: rgba(63, 63, 123, 0.807);
+    padding: 30px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.parrafo-ayuda{
+    background-color: #000000;
+    font-family: 'calibri';
+    font-size: 25px;
+    text-align: center;
+    margin: 25px 300px;
+    border-radius: 30px 50px 50px 50px;
+    color: white;
+    margin-top: 50px;
+}
+
+.form-registro h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.controls{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.807);
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #171818;
+    font-family: 'calibri';
+    font-size: 12px;
+}
+
+.form-registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-registro a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-registro a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-registro botons{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.807);
+    border: none;
+    padding: 12px;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+
+.contacto{
+    color: white;
+background-color: black;
+text-align: center;
+margin-left: 55px;
+font-size: 20px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+
+.button {
+    margin-bottom: 5%;
+    margin-left: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    height: 40px;
+    width: 112px;
+    border: none;
+    background: #d91106d6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.lable {
+    text-align: center;
+    line-height: 20px;
+    font-size: 17px;
+    color: #000000;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    background: #e60c0c8b;
+}
+
+.button:hover .svg-icon {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+transform: rotate(0deg);
+    }
+    100% {
+transform: rotate(-360deg);
+    }
+}
